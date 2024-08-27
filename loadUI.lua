@@ -16,8 +16,8 @@ local fruit1 = FruitOptionsSelect:CreateToggle('Kitsune', false, Color3.fromRGB(
 end)
 
 local hopServer = FruitOptionsSelect:CreateButton('Hop Server', function()
-    Library:CreateNotification('Kitsune', 'Disabled Farm', 2)
-    --loadstring(game:HttpGet('https://raw.githubusercontent.com/obscureScript/Fruit-Farmer/main/ServerHop.lua'))()
+    Library:CreateNotification('HopServer', 'Loading...', 2)
+    local hop = loadstring(game:HttpGet('https://raw.githubusercontent.com/obscureScript/Fruit-Farmer/main/ServerHop.lua'))()
 end)
 -- END
 
