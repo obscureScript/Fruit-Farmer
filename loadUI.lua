@@ -2,13 +2,20 @@ local Library = loadstring(game:HttpGet('https://raw.githubusercontent.com/obscu
 
 local Window = Library:CreateWindow('Obscure', 'Name', 'Visual UI Library', 'rbxassetid://10618928818', false, 'VisualUIConfigs', 'Default')
 
-local FruitTab = Window:CreateTab('Fruit', true, 'rbxassetid://3926305904', Vector2.new(524, 44), Vector2.new(36, 36))
+-- START
+local FruitOptionsTab = Window:CreateTab('Fruit', true, 'rbxassetid://3926305904', Vector2.new(524, 44), Vector2.new(36, 36))
 
-local FruitSection = FruitTab:CreateSection('Fruit Options')
+local FruitOptionsSelect = FruitOptionsTab:CreateSection('Fruit Options')
 
-local fruit1 = FruitSection:checkbox('Apple', function(state)
-    print(state)
+local fruit1 = FruitOptionsSelect:CreateToggle('Enable Checklist', false, Color3.fromRGB(0, 125, 255), 0.25, function(Value)
+    if Value then
+        print('Checklist Enabled')
+    else
+        print('Checklist Disabled')
+    end
 end)
+
+-- END
 
 local Tab = Window:CreateTab('Tab', true, 'rbxassetid://3926305904', Vector2.new(524, 44), Vector2.new(36, 36))
 
