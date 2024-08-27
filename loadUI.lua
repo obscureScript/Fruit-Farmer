@@ -4,7 +4,11 @@ local Window = Library:CreateWindow('Obscure', 'Name', 'Visual UI Library', 'rbx
 
 local FruitTab = Window:CreateTab('Fruit', true, 'rbxassetid://3926305904', Vector2.new(524, 44), Vector2.new(36, 36))
 
-local FruitSection = FruitTab:CreateSection('Fruit Section')
+local FruitSection = FruitTab:CreateSection('Fruit Options')
+
+local fruit1 = FruitSection:checkbox('Apple', function(state)
+    print(state)
+end)
 
 local Tab = Window:CreateTab('Tab', true, 'rbxassetid://3926305904', Vector2.new(524, 44), Vector2.new(36, 36))
 
