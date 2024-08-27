@@ -1,4 +1,4 @@
-local Library = loadstring(game:HttpGet('https://raw.githubusercontent.com/ruandutrab/roblox-script/main/source.lua?token=GHSAT0AAAAAACU5RKY7J2RYRAIO7BHUDDLYZWKO7YA'))()
+local Library = loadstring(game:HttpGet('https://raw.githubusercontent.com/obscureScript/Fruit-Farmer/main/source.lua'))()
 
 local Window = Library:CreateWindow('Hub Name', 'Game Name', 'Visual UI Library', 'rbxassetid://10618928818', false, 'VisualUIConfigs', 'Default')
 
