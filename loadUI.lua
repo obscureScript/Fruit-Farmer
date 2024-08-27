@@ -9,10 +9,9 @@ local FruitOptionsSelect = FruitOptionsTab:CreateSection('Fruit Options')
 
 local fruit1 = FruitOptionsSelect:CreateToggle('Enable Checklist', false, Color3.fromRGB(0, 125, 255), 0.25, function(Value)
     if Value then
-        Library:CreateNotification('fruit1', 'Active Farm', 5)
-        print('Checklist Enabled')
+        Library:CreateNotification('Kitsune', 'Actived Farm', 2)
     else
-        print('Checklist Disabled')
+        Library:CreateNotification('Kitsune', 'Disabled Farm', 2)
     end
 end)
 
