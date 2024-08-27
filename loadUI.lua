@@ -1,6 +1,10 @@
 local Library = loadstring(game:HttpGet('https://raw.githubusercontent.com/obscureScript/Fruit-Farmer/main/source.lua'))()
 
-local Window = Library:CreateWindow('Hub Name', 'Game Name', 'Visual UI Library', 'rbxassetid://10618928818', false, 'VisualUIConfigs', 'Default')
+local Window = Library:CreateWindow('Obscure', 'Name', 'Visual UI Library', 'rbxassetid://10618928818', false, 'VisualUIConfigs', 'Default')
+
+local FruitTab = Window:CreateTab('Fruit', true, 'rbxassetid://3926305904', Vector2.new(524, 44), Vector2.new(36, 36))
+
+local FruitSection = FruitTab:CreateSection('Fruit Section')
 
 local Tab = Window:CreateTab('Tab', true, 'rbxassetid://3926305904', Vector2.new(524, 44), Vector2.new(36, 36))
 
@@ -62,7 +66,7 @@ local UpdateImage = UpdateSection:CreateButton('Update Image', function()
     Image:UpdateImage('rbxassetid://10580575081', UDim2.new(0, 200, 0, 200))
 end)
 
-local LibraryFunctions = Window:CreateTab('Configuration', false, 'rbxassetid://3926305904', Vector2.new(524, 44), Vector2.new(36, 36)) --Library Functions
+local LibraryFunctions = Window:CreateTab('UI Configuration', false, 'rbxassetid://3926305904', Vector2.new(524, 44), Vector2.new(36, 36)) --Library Functions
 
 local UIFunctions = LibraryFunctions:CreateSection('UI Functions')
 
