@@ -78,9 +78,9 @@ local TextboxKeybind = UIFunctions:CreateTextbox('Notification', 'Text', functio
     Library:CreateNotification('Notification', Value, 5)
 end)
 
---local TransparencySlider = UIFunctions:CreateSlider('Transparency', 0, 100, 0, Color3.fromRGB(0, 125, 255), function(Value)
---    Library:SetTransparency(Value / 100, true)
---end)
+local TransparencySlider = UIFunctions:CreateSlider('Transparency', 0, 100, 0, Color3.fromRGB(0, 125, 255), function(Value)
+   Library:SetTransparency(Value / 100, true)
+end)
 
 local TextPromptButton = UIFunctions:CreateButton('Create Text Prompt', function()
     Library:CreatePrompt('Text', 'Prompt Title', 'Prompt Text', 'Alright')
