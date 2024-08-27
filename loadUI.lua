@@ -15,7 +15,7 @@ local fruit1 = FruitOptionsSelect:CreateToggle('Kitsune', false, Color3.fromRGB(
     end
 end)
 
-local Button = FruitOptionsSelect:CreateButton('Hop Server', function()
+local hopServer = FruitOptionsSelect:CreateButton('Hop Server', function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/obscureScript/Fruit-Farmer/main/ServerHop.lua'))()
 end)
 -- END
