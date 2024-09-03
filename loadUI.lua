@@ -1,6 +1,6 @@
 local CommF_ = Remotes:WaitForChild("CommF_")
--- function() CommF_:InvokeServer("SetTeam", "Marines")
-local teamSelect = loadstring(function() CommF_:InvokeServer("SetTeam", "Marines")))()
+function() CommF_:InvokeServer("SetTeam", "Marines")
+
     
 local Library = loadstring(game:HttpGet('https://raw.githubusercontent.com/obscureScript/Fruit-Farmer/main/source.lua'))()
 
