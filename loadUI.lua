@@ -1,4 +1,4 @@
-local CommF_ = Remotes:WaitForChild("CommF_")
+--local CommF_ = Remotes:WaitForChild("CommF_")
 --function() CommF_:InvokeServer("SetTeam", "Marines")
 
     
