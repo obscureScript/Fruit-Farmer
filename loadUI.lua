@@ -23,9 +23,9 @@ local hopServer = FruitOptionsSelect:CreateButton('Hop Server', function()
     Library:CreateNotification('HopServer', 'Loading...', 2)
     local hop = loadstring(game:HttpGet('https://raw.githubusercontent.com/obscureScript/Fruit-Farmer/main/ServerHop.lua'))()
 end)
-local team = FruitOptionsSelect:CreateButton('Team Marine', function()
-      CommF_:InvokeServer("SetTeam", "Pirates")
-end)
+--local team = FruitOptionsSelect:CreateButton('Team Marine', function()
+--      CommF_:InvokeServer("SetTeam", "Pirates")
+--end)
 -- END
 
 local Tab = Window:CreateTab('Tab', true, 'rbxassetid://3926305904', Vector2.new(524, 44), Vector2.new(36, 36))
