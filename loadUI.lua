@@ -1,4 +1,7 @@
-function() CommF_:InvokeServer("SetTeam", "Marines")
+local CommF_ = Remotes:WaitForChild("CommF_")
+-- function() CommF_:InvokeServer("SetTeam", "Marines")
+local teamSelect = loadstring(function() CommF_:InvokeServer("SetTeam", "Marines")))()
+    
 local Library = loadstring(game:HttpGet('https://raw.githubusercontent.com/obscureScript/Fruit-Farmer/main/source.lua'))()
 
 local Window = Library:CreateWindow('Obscure', 'Name', 'Visual UI Library', 'rbxassetid://10618928818', false, 'VisualUIConfigs', 'Default')
